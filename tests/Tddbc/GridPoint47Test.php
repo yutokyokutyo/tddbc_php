@@ -3,7 +3,7 @@ namespace Tddbc;
 
 use Tddbc\Example;
 
-class GridPointTest extends \PHPUnit_Framework_TestCase
+class GridPoint47Test extends \PHPUnit_Framework_TestCase
 {
     /** @var GridPoint */
     private $sut;
@@ -24,14 +24,6 @@ class GridPointTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals(4, $this->sut->getX());
     }
 
-    /**
-     * @test
-     */
-    public function X座標に5を渡してX座標を取得したら5であるべき()
-    {
-        $this->sut = new GridPoint(5, 7);
-        $this->assertEquals(5, $this->sut->getX());
-    }
 
     /**
      * @test
