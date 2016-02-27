@@ -3,7 +3,7 @@ namespace Tddbc;
 
 use Tddbc\Example;
 
-class GridPoint58Test extends \PHPUnit_Framework_TestCase
+class GivenXequal5andYequal8GridPointTest extends \PHPUnit_Framework_TestCase
 {
     /** @var GridPoint */
     private $sut;
