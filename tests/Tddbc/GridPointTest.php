@@ -21,7 +21,6 @@ class GridPointTest extends \PHPUnit_Framework_TestCase
      */
     public function X座標に4を渡してX座標を取得したら4であるべき()
     {
-        $this->sut = new GridPoint(4, 7);
         $this->assertEquals(4, $this->sut->getX());
     }
 
@@ -39,7 +38,6 @@ class GridPointTest extends \PHPUnit_Framework_TestCase
      */
     public function y座標に7を渡してy座標を取得したら7であるべき()
     {
-        $this->sut = new GridPoint(5, 7);
         $this->assertEquals(7, $this->sut->getY());
     }
 }
