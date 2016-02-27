@@ -14,6 +14,6 @@ class GridPoint
     }
     public function getX()
     {
-        return 4;
+        return $this->x;
     }
 }
