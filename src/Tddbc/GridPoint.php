@@ -34,7 +34,12 @@ class GridPoint
 
     public function isNeighborOf($gridPoint)
     {
-        return $gridPoint->getX() == $this->x - 1
-            || $gridPoint->getX() == $this->x + 1;
+        return $this->isNeighborPointOf($gridPoint->getX(), $this->x);
+    }
+
+    private function isNeighborPointOf($other,$self)
+    {
+        return $other == $self - 1 
+            || $other == $self + 1;
     }
 }
