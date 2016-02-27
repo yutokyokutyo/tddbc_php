@@ -44,7 +44,7 @@ class GivenXequal5andYequal8GridPointTest extends \PHPUnit_Framework_TestCase
     /**
      * @test
      */
-    public function x座標5y座標8の格子点を比較したら同じであるべき()
+    public function x座標5_y座標8の格子点を比較したら同じであるべき()
     {
         $this->assertTrue($this->sut->hasSameCoordinatesWith(new GridPoint(5, 8)));
     }
