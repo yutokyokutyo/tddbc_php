@@ -33,4 +33,13 @@ class GridPointTest extends \PHPUnit_Framework_TestCase
         $this->sut = new GridPoint(5, 7);
         $this->assertEquals(5, $this->sut->getX());
     }
+
+    /**
+     * @test
+     */
+    public function y座標に7を渡してy座標を取得したら7であるべき()
+    {
+        $this->sut = new GridPoint(5, 7);
+        $this->assertEquals(7, $this->sut->getY());
+    }
 }

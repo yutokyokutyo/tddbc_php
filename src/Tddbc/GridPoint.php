@@ -16,4 +16,9 @@ class GridPoint
     {
         return $this->x;
     }
+
+    public function getY()
+    {
+        return $this->y;
+    }
 }
