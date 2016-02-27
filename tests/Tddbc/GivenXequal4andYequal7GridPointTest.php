@@ -44,7 +44,7 @@ class GivenXequal4andYequal7GridPointTest extends \PHPUnit_Framework_TestCase
     /**
      * @test
      */
-    public function x座標4_y座標7の格子点を比較したら同じであるべき()
+    public function 自分と同じ座標を持つ格子点と比較したら同じであるべき()
     {
         $this->assertTrue($this->sut->hasSameCoordinatesWith(new GridPoint(4, 7)));
     }
@@ -52,7 +52,7 @@ class GivenXequal4andYequal7GridPointTest extends \PHPUnit_Framework_TestCase
     /**
      * @test
      */
-    public function x座標5_y座標8の格子点を比較したら異なるべき()
+    public function 自分と異なる座標を持つ格子点と比較したら異なるべき()
     {
         $this->assertFalse($this->sut->hasSameCoordinatesWith(new GridPoint(5, 8)));
     }
@@ -60,7 +60,7 @@ class GivenXequal4andYequal7GridPointTest extends \PHPUnit_Framework_TestCase
      *
      * @test
      */
-    public function x座標3_y座標7の格子点と隣り合っているべき()
+    public function x座標が自分より1小さい格子点と隣り合っているべき()
     {
         $this->assertTrue($this->sut->isNeighborOf(new GridPoint(3, 7)));
     }
@@ -69,7 +69,7 @@ class GivenXequal4andYequal7GridPointTest extends \PHPUnit_Framework_TestCase
      *
      * @test
      */
-    public function x座標2_y座標7の格子点と隣り合っていないべき()
+    public function x座標が自分より2小さい格子点と隣り合っていないべき()
     {
         $this->assertFalse($this->sut->isNeighborOf(new GridPoint(2, 7)));
     }
