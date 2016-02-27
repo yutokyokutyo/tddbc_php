@@ -19,7 +19,7 @@ class GridPoint58Test extends \PHPUnit_Framework_TestCase
     /**
      * @test
      */
-    public function X座標に5を渡してX座標を取得したら5であるべき()
+    public function X座標を取得したら5であるべき()
     {
         $this->assertEquals(5, $this->sut->getX());
     }
@@ -28,7 +28,7 @@ class GridPoint58Test extends \PHPUnit_Framework_TestCase
     /**
      * @test
      */
-    public function y座標に8を渡してy座標を取得したら8であるべき()
+    public function y座標を取得したら8であるべき()
     {
         $this->assertEquals(8, $this->sut->getY());
     }
@@ -36,7 +36,7 @@ class GridPoint58Test extends \PHPUnit_Framework_TestCase
     /**
      * @test
      */
-    public function x座標に5_y座標に8を渡して文字列表を取得したら5_8であるべき()
+    public function 文字列表を取得したら5_8であるべき()
     {
         $this->assertEquals('(5,8)', $this->sut->getNotation());
     }

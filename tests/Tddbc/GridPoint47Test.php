@@ -19,7 +19,7 @@ class GridPoint47Test extends \PHPUnit_Framework_TestCase
     /**
      * @test
      */
-    public function X座標に4を渡してX座標を取得したら4であるべき()
+    public function X座標を取得したら4であるべき()
     {
         $this->assertEquals(4, $this->sut->getX());
     }
@@ -28,7 +28,7 @@ class GridPoint47Test extends \PHPUnit_Framework_TestCase
     /**
      * @test
      */
-    public function y座標に7を渡してy座標を取得したら7であるべき()
+    public function y座標を取得したら7であるべき()
     {
         $this->assertEquals(7, $this->sut->getY());
     }
@@ -36,7 +36,7 @@ class GridPoint47Test extends \PHPUnit_Framework_TestCase
     /**
      * @test
      */
-    public function x座標に4_y座標に7を渡して文字列表を取得したら4_7であるべき()
+    public function 文字列表を取得したら4_7であるべき()
     {
         $this->assertEquals('(4,7)', $this->sut->getNotation());
     }
@@ -44,7 +44,7 @@ class GridPoint47Test extends \PHPUnit_Framework_TestCase
     /**
      * @test
      */
-    public function x座標4y座標7の格子点とx座標4y座標7の格子点を比較したら同じであるべき()
+    public function x座標4y座標7の格子点を比較したら同じであるべき()
     {
         $this->assertTrue($this->sut->hasSameCoordinatesWith(new GridPoint(4, 7)));
     }
