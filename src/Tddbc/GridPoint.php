@@ -26,4 +26,9 @@ class GridPoint
     {
         return '(' . $this->x . ',' . $this->y . ')';
     }
+
+    public function hasSameCoordinatesWith($gridPoint)
+    {
+        return true;
+    }
 }

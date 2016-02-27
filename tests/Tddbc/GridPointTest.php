@@ -48,4 +48,12 @@ class GridPointTest extends \PHPUnit_Framework_TestCase
     {
         $this->assertEquals('(4,7)', $this->sut->getNotation());
     }
+
+    /**
+     * @test
+     */
+    public function x座標4y座標7の格子点とx座標4y座標7の格子点を比較したら同じであるべき()
+    {
+        $this->assertTrue($this->sut->hasSameCoordinatesWith(new GridPoint(4, 7)));
+    }
 }
