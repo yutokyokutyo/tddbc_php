@@ -21,4 +21,9 @@ class GridPoint
     {
         return $this->y;
     }
+
+    public function getNotation()
+    {
+        return '(' . $this->x . ',' . $this->y . ')';
+    }
 }

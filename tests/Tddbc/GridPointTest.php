@@ -40,4 +40,12 @@ class GridPointTest extends \PHPUnit_Framework_TestCase
     {
         $this->assertEquals(7, $this->sut->getY());
     }
+
+    /**
+     * @test
+     */
+    public function x座標に4_y座標に7を渡して文字列表を取得したら4_7であるべき()
+    {
+        $this->assertEquals('(4,7)', $this->sut->getNotation());
+    }
 }
