@@ -64,4 +64,13 @@ class GivenXequal4andYequal7GridPointTest extends \PHPUnit_Framework_TestCase
     {
         $this->assertTrue($this->sut->isNeighborOf(new GridPoint(3, 7)));
     }
+
+    /**
+     *
+     * @test
+     */
+    public function x座標2_y座標7の格子点と隣り合っていないべき()
+    {
+        $this->assertFalse($this->sut->isNeighborOf(new GridPoint(2, 7)));
+    }
 }
